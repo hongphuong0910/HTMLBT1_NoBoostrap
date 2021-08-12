@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    height: 851px;
+    width: 100%;
+    background: linear-gradient(to right, #0e82f9b0, #0e82f9b0), url('../images/banner.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7%;
+    padding-top: 40px;
+    color: white;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#header .logo {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 97px;
+}
+
+#header nav ul {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+}
+
+#header nav ul li a {
+    color: white;
+    margin: 20px;
+}
+
+#header .info {
+    margin-top: 218px;
+    color: white;
+    margin-left: 250px;
+}
+
+#header .info h1 {
+    margin-top: 218px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 65px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#header .info p {
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 26px;
+}
+
+#header .info .hire-btn {
+    color: #3295fa;
+    background-color: white;
+    border-radius: 23px;
+    font-size: 14px;
+    width: 150px;
+    font-weight: 600;
+    margin-top: 67px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.container {
+    padding: 7rem 0;
+}
+
+
+/* #content.container {
+    
+} */
+
+#content.container .about {
+    display: flex;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#content.container .about .left {
+    width: 400px;
+}
+
+#content.container .about .right {
+    width: 620px;
+}
+
+#content.container .about .left .group {
+    box-shadow: 6px 3px 19px -6px #888888;
+    width: 400px;
+}
+
+#content.container .about .left .group .img img {
+    width: 400px;
+    height: 457px;
+}
+
+#content.container .about .left .group .about-info img {
+    display: flex !important;
+    font-size: 14px;
+    line-height: 42px;
+    margin-left: 43px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+#content.container .about .left .group .about-info {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+#content.container .about .left .group .about-info li {
+    display: flex !important;
+    font-size: 14px;
+    line-height: 42px;
+    margin-left: 43px;
+}
+
+#content.container .about .left .group .about-info li span:first-child {
+    width: 130px;
+    font-weight: 600;
+    color: black;
+}
+
+#content.container .about .left .group .about-info li span {
+    width: calc(100% - 130px);
+}
+
+#content.container .about .right .about-content {
+    padding-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+#content.container .about .right .about-content .information {
+    line-height: 29px;
+}
+
+#content.container .about .right .about-content h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#content.container .about .right .about-content p:first-child {
+    font-size: 14px;
+    color: #727272;
+}
+
+#content.container .about .right .about-content p {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #727272;
+}
+
+#content.container .about .right .skills {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 40px;
+    /* padding: 0 20px; */
+}
+
+#content.container .about .right .skill-name {
+    font-size: 14px;
+    color: #727272;
+    margin: 20px 0;
+}
+
+#content.container .about .right .skill-bar {
+    height: 5px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+
+#content.container .about .right .skill-per {
+    height: 5px;
+    background-color: #0fbcf9;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s ease;
+    position: relative;
+}
+
+#content.container .about .right .skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: rgb(40, 66, 185);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+#content.container .about .right .skill-per::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(40, 66, 185);
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+#content.container .about .right .about-content .btn {
+    background-color: #3295fa;
+    border-radius: 23px;
+    font-size: 18px;
+    color: white;
+    width: 215px;
+    margin-top: 73px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#content.container .about .hire-btn {
+    background-color: #3295fa;
+    border-radius: 23px;
+    font-size: 18px;
+    color: white;
+    width: 215px;
+    margin-top: 73px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+#resume.container {
+    background-color: #f8f9fb;
+}
+
+#resume.container .resumes {
+    /* display: flex; */
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#resume.container .resumes .left {
+    width: 600px;
+}
+
+#resume.container .resumes .left h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#resume.container .resumes .left h3 span:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    color: #999b9d;
+    font-weight: 300;
+}
+
+#resume.container .resumes .left p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #727272;
+}
+
+#resume.container .resumes .left h3 span:last-child {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #999b9d;
+    font-weight: 500;
+}
+
+#resume.container .resumes .content {
+    margin-top: 59px;
+    display: flex;
+    width: 1020px;
+}
+
+#resume.container .resumes .content .left {
+    width: 510px;
+}
+
+#resume.container .resumes .content .left .edu .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+#resume.container .resumes .content .left .edu .group_resume {
+    margin-left: 40px;
+    padding-top: 48px;
+    display: flex;
+}
+
+#resume.container .resumes .content .left .edu .group_resume .text p {
+    padding-top: 0px;
+}
+
+#resume.container .resumes .content .left .edu .group_resume .text p:last-child {
+    padding-top: 22px;
+}
+
+#resume.container .resumes .content .left p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #727272;
+}
+
+#resume.container .resumes .content .left .edu .text {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+#resume.container .resumes .content .left .edu .text p:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+
+#resume.container .resumes .content .right {
+    width: 510px;
+}
+
+#resume.container .resumes .content .right {
+    width: 510px;
+}
+
+#resume.container .resumes .content .right .edu .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+}
+
+#resume.container .resumes .content .right .edu .group_resume {
+    margin-left: 40px;
+    padding-top: 48px;
+    display: flex;
+}
+
+#resume.container .resumes .content .right .edu .group_resume .text p {
+    padding-top: 0px;
+}
+
+#resume.container .resumes .content .right .edu .group_resume .text p:last-child {
+    padding-top: 22px;
+}
+
+#resume.container .resumes .content .right p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #727272;
+}
+
+#resume.container .resumes .content .right .edu .text {
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+#resume.container .resumes .content .right .edu .text p:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+
+#mywork.container {
+    /* display: flex; */
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#mywork.container .content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mywork.container .content ul li:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+
+#mywork.container .content ul li:first-child span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    color: #999b9d;
+    font-weight: 300;
+}
+
+#mywork.container .content ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #999b9d;
+    font-weight: 500;
+}
+
+#mywork.container .content ul li a {
+    text-decoration: none;
+    color: #3295fa;
+}
+
+#mywork.container .all_image {
+    position: relative;
+    column-count: 3;
+    padding: 20px;
+}
+
+#mywork.container .image {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#mywork.container .image img {
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+#review.container {
+    background-color: #3295fa;
+}
+
+#review.container .content {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#review.container .content .customer-testimonial {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+
+#review.container .content .customer-testimonial .testimonial {
+    text-align: center;
+}
+
+#review.container .content .customer-testimonial .testimonial img {
+    border-radius: 50%;
+    margin: 0 auto 0 auto;
+    max-width: 50px;
+}
+
+#review.container .content .customer-testimonial .testimonial .testimonial-author {
+    padding-top: 23px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+#review.container .content .customer-testimonial .testimonial blockquote {
+    padding-top: 47px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 20.5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 36px;
+}
+
+#review.container .content .customer-testimonial.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 5px 7px;
+    border-radius: 20px;
+    background: #fdfffe;
+    /* opacity: 1; */
+}
+
+#review.container .content .trademark a {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    padding-top: 60px;
+}
+
+#review.container .content .trademark a img {
+    list-style-type: none;
+    margin-left: 52px;
+    margin-right: 52px;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+#get_in_touch.container .get_in_touchs {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#get_in_touch.container .get_in_touchs .left {
+    width: 578px;
+}
+
+#get_in_touch.container .get_in_touchs .left h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#get_in_touch.container .get_in_touchs .left h3 span:first-child {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 48px;
+    color: #999b9d;
+    font-weight: 300;
+}
+
+#get_in_touch.container .get_in_touchs .left p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    color: #727272;
+    padding-top: 10px;
+}
+
+#get_in_touch.container .get_in_touchs .left h3 span:last-child {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #999b9d;
+    font-weight: 500;
+}
+
+#get_in_touch.container .get_in_touchs .infor {
+    display: flex;
+    margin-top: 75px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .left {
+    width: 500px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .left form input {
+    padding-left: 20px;
+    width: 91%;
+    height: 42px;
+    border: 2px solid rgb(228, 228, 228);
+}
+
+#get_in_touch.container .get_in_touchs .infor .left form input:first-child {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .left form input {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .left form textarea {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px;
+    padding-left: 20px;
+    border: 2px solid rgb(228, 228, 228);
+    width: 91%;
+}
+
+#get_in_touch.container .get_in_touchs .hire-btn {
+    margin-top: 0;
+    background-color: #3295fa;
+    border-radius: 23px;
+    font-size: 14px;
+    color: white;
+    height: 46px;
+    width: 154px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .right {
+    width: 500px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .right .contact {
+    list-style: none;
+    padding-left: 100px;
+    /* margin-top: 37px; */
+}
+
+#get_in_touch.container .get_in_touchs .infor .right .contact li:first-child {
+    padding: 0;
+}
+
+#get_in_touch.container .get_in_touchs .infor .right .contact li {
+    padding-top: 43px;
+}
+
+#get_in_touch.container .get_in_touchs .infor .right .contact li span {
+    padding-left: 10px;
+    color: #727272;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* footer */
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
